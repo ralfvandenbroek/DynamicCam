@@ -483,7 +483,7 @@ return false;]],
                 name = "Annoying Spells",
                 priority = 1000,
                 condition = [[for k,v in pairs(this.buffs) do
-    if (UnitBuff("player", GetSpellInfo(v))) then
+    if (UnitBuff("player", v)) then
         return true;
     end
 end
